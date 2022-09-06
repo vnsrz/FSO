@@ -31,13 +31,14 @@ int main(void){
 
     int a = 3, b=11;
     param p1, p2;
+    
     p1.x = &a;
-    p1.smeu = &s2;
-    p1.svizinho = &s1;
+    p1.smeu = &s1;
+    p1.svizinho = &s2;
 
     p2.x = &b;
-    p1.svizinho = &s2;
-    p1.smeu = &s1;
+    p2.smeu = &s2;
+    p2.svizinho = &s1;
 
     pthread_t t1, t2;
 
